@@ -1,0 +1,46 @@
+{% extends 'appointment/base.html' %}
+
+{% block title %}
+Delete Appointment
+{% endblock %}
+
+{% block content %}
+
+<div class="content-box">
+
+    <h1>Delete Appointment</h1>
+
+    <p>
+        Are you sure you want to delete the appointment for
+        <strong>{{ appointment.client_name }}</strong>?
+    </p>
+
+    <p>
+        Appointment Date:
+        <strong>{{ appointment.appointment_date }}</strong>
+    </p>
+
+    <p>
+        Appointment Time:
+        <strong>{{ appointment.appointment_time }}</strong>
+    </p>
+
+    <p>
+        This action cannot be undone.
+    </p>
+
+    <form method="POST">
+        {% csrf_token %}
+
+        <button type="submit" class="delete-button">
+            Yes, Delete
+        </button>
+
+        <a href="{% url 'appointment_list' %}" class="cancel-button">
+            Cancel
+        </a>
+    </form>
+
+</div>
+
+{% endblock %}

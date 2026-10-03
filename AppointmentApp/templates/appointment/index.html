@@ -1,0 +1,39 @@
+{% extends 'appointment/base.html' %}
+
+{% block title %}
+Appointment Management System
+{% endblock %}
+
+{% block content %}
+
+<div class="content-box home-content">
+
+    <div class="home-icon">📅</div>
+
+    <h1>Appointment Management System</h1>
+
+    <p class="welcome-text">
+        Welcome to the Appointment Management System.
+    </p>
+
+    <p class="description-text">
+        Manage and monitor appointment records,
+        including client information, appointment date,
+        time, service, and appointment status.
+    </p>
+
+    <div class="home-actions">
+
+        <a href="{% url 'appointment_list' %}" class="button">
+            View Appointments
+        </a>
+
+        <a href="{% url 'appointment_create' %}" class="secondary-button">
+            Add Appointment
+        </a>
+
+    </div>
+
+</div>
+
+{% endblock %}

@@ -1,0 +1,212 @@
+/* =========================
+   GENERAL
+   ========================= */
+
+body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background-color: #eefaf5;
+    color: #355c52;
+}
+
+
+/* =========================
+   MAIN CONTENT
+   ========================= */
+
+.main-content {
+    min-height: 100vh;
+    padding: 80px 30px;
+    box-sizing: border-box;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+
+/* =========================
+   CONTENT CARD
+   ========================= */
+
+.content-box {
+    background-color: #ffffff;
+    padding: 20px 25px;
+    border-radius: 14px;
+    box-shadow: 0 5px 20px rgba(40, 120, 100, 0.08);
+
+    width: 100%;
+    max-width: 1050px;
+
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+/* =========================
+   HEADING
+   ========================= */
+
+h1 {
+    color: #245c50;
+    margin: 0 0 15px 0;
+    font-size: 30px;
+    font-weight: 600;
+
+    /* LEFT SIDE */
+    text-align: left;
+}
+
+
+/* =========================
+   TABLE
+   ========================= */
+
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+
+    /* Center table inside white card */
+    margin: 0 auto;
+
+    overflow: hidden;
+
+    border: 1px solid #c9e5dc;
+    border-radius: 10px;
+}
+
+
+/* =========================
+   TABLE HEADER
+   ========================= */
+
+th {
+    background-color: #5bb89e;
+    color: white;
+
+    padding: 14px 12px;
+
+    text-align: left;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    border-right: 1px solid #75c5af;
+}
+
+
+/* =========================
+   TABLE DATA
+   ========================= */
+
+td {
+    padding: 14px 12px;
+
+    border-right: 1px solid #c9e5dc;
+    border-bottom: 1px solid #c9e5dc;
+
+    font-size: 14px;
+    color: #355c52;
+
+    background-color: white;
+}
+
+
+/* =========================
+   BORDERS
+   ========================= */
+
+th:last-child,
+td:last-child {
+    border-right: none;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+
+/* =========================
+   HOVER
+   ========================= */
+
+tr:hover td {
+    background-color: #f1fbf7;
+}
+
+
+/* =========================
+   COLUMN WIDTHS
+   ========================= */
+
+th:nth-child(1),
+td:nth-child(1) {
+    width: 8%;
+}
+
+th:nth-child(2),
+td:nth-child(2) {
+    width: 20%;
+}
+
+th:nth-child(3),
+td:nth-child(3) {
+    width: 18%;
+}
+
+th:nth-child(4),
+td:nth-child(4) {
+    width: 14%;
+}
+
+th:nth-child(5),
+td:nth-child(5) {
+    width: 13%;
+}
+
+th:nth-child(6),
+td:nth-child(6) {
+    width: 15%;
+}
+
+th:nth-child(7),
+td:nth-child(7) {
+    width: 12%;
+}
+
+
+/* =========================
+   NO DATA
+   ========================= */
+
+.no-data {
+    text-align: center;
+    padding: 25px;
+    color: #66877d;
+}
+
+
+/* =========================
+   RESPONSIVE
+   ========================= */
+
+@media (max-width: 900px) {
+
+    .main-content {
+        padding: 30px 15px;
+    }
+
+    .content-box {
+        width: 100%;
+        padding: 25px;
+    }
+
+    h1 {
+        font-size: 26px;
+        text-align: left;
+    }
+
+    table {
+        min-width: 800px;
+    }
+}
